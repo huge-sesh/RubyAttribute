@@ -57,7 +57,7 @@ extension RubyAnnotationAttribute: CodableAttributedStringKey, MarkdownDecodable
 
 public extension AttributeScopes {
     struct CoreTextAttributes: AttributeScope {
-        let rubyAnnotation: RubyAnnotationAttribute
+        public let rubyAnnotation: RubyAnnotationAttribute
         let foundation: FoundationAttributes
         #if canImport(SwiftUI)
         let swiftUI: SwiftUIAttributes
